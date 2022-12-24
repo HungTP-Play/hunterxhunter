@@ -29,7 +29,7 @@ func ConnectAndMigrate() {
 	}
 	fmt.Println("Connected to database")
 
-	err = db.AutoMigrate(&models.Character{}, &models.Image{})
+	err = db.AutoMigrate(&models.Character{}, &models.Image{}, &models.Arc{})
 	if err != nil {
 		panic(err)
 	}
