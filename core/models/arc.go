@@ -8,4 +8,5 @@ type Arc struct {
 	FromEpisode int         `json:"from_episode"`
 	ToEpisode   int         `json:"to_episode"`
 	Characters  []Character `json:"characters" gorm:"type:jsonb"`
+	Description string      `json:"description"`
 }
